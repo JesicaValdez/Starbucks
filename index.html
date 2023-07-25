@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Author" content="Jesica Valdez"/>
-    <meta name="description" content="Sitio web Starbuks" />
+    <meta name="description" content="Encontra ese momento ideal para hacer una pausa y disfrutar tu bebida favorita" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="cafe, Starbucks, bebida">
     <title>Starbucks</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./Image/logo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300&family=Quicksand:wght@400;500;700&family=Roboto:wght@300;400;700&family=Work+Sans:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -15,24 +19,25 @@
     <header class="header">
         <!-- Contenedor logo lado izquierdo -->
         <div class="header__container-logo">
-            <img class="header__img-logo"  src="./Image/logo header.png" alt="logo starbucks header">
+            <img class="header__logo"  src="./Image/logo header.png" alt="logo starbucks header">
         </div>
         <!-- Contenedor navbar centro del header -->
         <nav class="header__nav">
                 <a class="header__nav-link" href="#">INICIO</a>
                 <a class="header__nav-link" href="#">CAFE</a>
                 <a class="header__nav-link" href="#">SOBRE NOSOTROS</a>
+                <a class="header__nav-link" href="#">DELIVERY</a>
         </nav>
         <!-- Contenedor icono login usuario lado derecho del header -->
-        <div class="header__container-login">
-            <a class="header__login" href="#">USUARIO</a>
+        <div class="header__container-user">
+            <a href="#">USUARIO</a>
         </div>
     </header>
     <!-- Bloque main -->
     <main class="main">
         <!--Contenedor TEXTO: titulo y parrafo lado izquierdo-->
         <div class="main__container-text">
-            <h1 class="main__title">No solo es Cafe es Starbucks</h1>
+            <h1 class="main__title">No solo es Cafe es <span>Starbucks</span></h1>
             <p class="main__descrition">
                 Cada dia, acudimos a trabajar con la esperanza de conseguir dos cosas: compartir el mejor Cafe con nuestros amigos y contribuir a que el mundo sea un poco mejor. Asi era cuando abrió la primera tienda Starbucks en 1871, y así continúa siendo hoy.
             </p>
@@ -42,44 +47,65 @@
             <img class="main__logo" src="./Image/logo body.png" alt="logo main" />
         </div>
     </main>
+
     <!-- Bloque Gallery -->
     <section class="gallery">
         <img class="gallery__img" src="./Image/gallery-1.png" alt="imagen 1 de la galeria"/>
         <img class="gallery__img" src="./Image/gallery-2.png" alt="imagen 2 de la galeria"/>
         <img class="gallery__img" src="./Image/gallery-3.png" alt="imagen 3 de la galeria"/>
     </section>
+
+    <!-- Bloque Contactanos -->
+    <section>
+        <h2>CONTACTANOS</h2>
+        <form>
+            <div>
+                <label>Correo Electronico</label>
+                <input type="email" required/>
+            </div>
+            <div>
+                <label>Comentario</label>
+                <textarea required></textarea>
+            </div>
+            <button type="submit"></button>
+        </form>
+    </section>
+
     <!-- Bloque Cards -->
     <section class="Cards">
         <!--Card 1-->
         <article class="Cards__card">
+            <div>5%</div>
             <img src="./Image/card-1.png" alt="card-1" />
             <h3>Aplicación de Starbucks</h3>
             <p>Ahorre tiempo con click & collect y recolecte sus estrellas tan facil</p>
-            <a>Pruebelo</a>
+            <a class="cards__card-btn" href="#">Pruebelo</a>
         </article>
         <!--Card 2-->
         <article class="Cards__card">
+            <div>10%</div>
             <img src="./Image/card-2.png" alt="card-2" />
             <h3>Starbucks Delivery</h3>
             <p>Starbucks entrega su comida y bebida favorita en la puerta de su casa</p>
-            <a>Entrega por UberEat</a>
-            <a>Entrega por PedidosYa</a>
+            <a class="cards__card-btn" href="#">Entrega por UberEat</a>
+            <a class="cards__card-btn" href="#">Entrega por PedidosYa</a>
         </article>
         <!--Card 3-->
         <article class="Cards__card">
             <img src="./Image/card-3.png" alt="card-3" />
             <h3>Novedades Starbucks</h3>
             <p>Mantengase informado de nuestras ultimas novedades y actualizaciones</p>
-            <a>Más información</a>
+            <a class="cards__card-btn" href="#">Más información</a>
         </article>
         <!--Card 4-->
         <article class="Cards__card">
             <img src="./Image/card-4.png" alt="card-4" />
             <h3>Historias de Starbucks</h3>
             <p>Descubra nuestra empresa y nuestra historia</p>
-            <a>Más información</a>
+            <a class="cards__card-btn" href="#">Más información</a>
         </article>
     </section>
+
     <!-- Bloque Footer -->
     <footer class="footer">
         <!--Contenedor botones login users lado izquiero footer-->
