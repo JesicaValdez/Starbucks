@@ -21,6 +21,7 @@
         <div class="header__container-logo">
             <img class="header__logo"  src="./Image/logo header.png" alt="logo starbucks header">
         </div>
+
         <!-- Contenedor navbar centro del header -->
         <nav class="header__nav">
                 <a class="header__nav-link" href="#">INICIO</a>
@@ -28,6 +29,7 @@
                 <a class="header__nav-link" href="#">SOBRE NOSOTROS</a>
                 <a class="header__nav-link" href="#">DELIVERY</a>
         </nav>
+
         <!-- Contenedor icono login usuario lado derecho del header -->
         <div class="header__container-user">
             <a href="#">USUARIO</a>
@@ -56,18 +58,18 @@
     </section>
 
     <!-- Bloque Contactanos -->
-    <section>
-        <h2>CONTACTANOS</h2>
-        <form>
-            <div>
+    <section class="contact">
+        <h2 class="contact__title"> CONTACTANOS </h2>
+        <form class="contact__form">
+            <div class="contact__input">
                 <label>Correo Electronico</label>
-                <input type="email" required/>
+                <input placeholder="Ingrese su correo electronico" type="email" required/>
             </div>
-            <div>
+            <div class="contact__input">
                 <label>Comentario</label>
-                <textarea required></textarea>
+                <textarea placeholder="Ingrese su comentario" required></textarea>
             </div>
-            <button type="submit"></button>
+            <button class="contact__btn" type="submit">Enviar</button>
         </form>
     </section>
 
